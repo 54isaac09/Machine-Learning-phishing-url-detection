@@ -11,3 +11,10 @@ venv/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# LaTeX
+informe/*.aux
+informe/*.log
+informe/*.bbl
+informe/*.blg
+informe/*.out

@@ -1,0 +1,54 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\IfFileExists{spanish.ldf}{%
+  \usepackage[spanish,es-noshorthands,es-tabla]{babel}%
+}{%
+  \renewcommand{\abstractname}{Resumen}%
+  \renewcommand{\refname}{Referencias}%
+  \renewcommand{\tablename}{Tabla}%
+  \renewcommand{\figurename}{Fig.}%
+}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{figuras/}}
+\renewcommand{\IEEEkeywordsname}{Palabras clave}
+
+\begin{document}
+
+\title{Detección de URLs de phishing con Machine Learning y Deep Learning: el efecto de los atajos en el dataset PhiUSIIL}
+
+\author{
+\IEEEauthorblockN{Nombre Apellido}
+\IEEEauthorblockA{Ingeniería Civil en Informática\\
+Universidad del Bío-Bío\\
+correo@alumnos.ubiobio.cl}
+\and
+\IEEEauthorblockN{Nombre Apellido}
+\IEEEauthorblockA{Ingeniería Civil en Informática\\
+Universidad del Bío-Bío\\
+correo@alumnos.ubiobio.cl}
+}
+
+\maketitle
+
+\begin{abstract}
+El phishing se distribuye principalmente mediante enlaces, por lo que clasificar una URL antes de abrirla es una defensa rápida. En este trabajo se compararon modelos de Machine Learning (regresión logística, Random Forest, XGBoost y perceptrón multicapa) y de Deep Learning (CNN de caracteres y BiGRU), además de una línea base TF-IDF, sobre las 235.370 URLs únicas del dataset PhiUSIIL. Con una división agrupada por dominio, los modelos que usan las variables originales o la URL completa alcanzan F1 entre 0,996 y 1,000 en prueba. El análisis exploratorio mostró que este resultado se explica por atajos del dataset: todas las URLs legítimas comienzan con \texttt{https://www.}, no tienen ruta y tienen \texttt{URLSimilarityIndex} igual a 100. Al usar solo el dominio, el mejor F1 fue 0,830 con TF-IDF y regresión logística, y 0,825 con la CNN de caracteres, que obtuvo la mayor precisión (0,952). Una prueba con URLs reales confirmó que el modelo entrenado con la URL completa clasifica como phishing cualquier URL legítima con ruta. Se concluye que los resultados casi perfectos reportados sobre PhiUSIIL no reflejan la capacidad real de detección y se discuten las limitaciones del enfoque basado en el dominio.
+\end{abstract}
+
+\begin{IEEEkeywords}
+phishing, detección de URLs, aprendizaje automático, redes convolucionales, aprendizaje por atajos
+\end{IEEEkeywords}
+
+\input{cuerpo1}
+
+\input{cuerpo2}
+
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}

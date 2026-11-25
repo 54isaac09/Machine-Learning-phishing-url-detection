@@ -1,0 +1,22 @@
+{
+  "A1 · Todas": {
+    "modelo": "Random Forest",
+    "archivo": "tab_A1.joblib",
+    "f1_val": 0.9999
+  },
+  "A2 · Sin URLSimilarityIndex": {
+    "modelo": "MLP",
+    "archivo": "tab_A2.joblib",
+    "f1_val": 0.9999
+  },
+  "A3 · Solo URL": {
+    "modelo": "MLP",
+    "archivo": "tab_A3.joblib",
+    "f1_val": 0.9976
+  },
+  "A4 · Léxicas del dominio": {
+    "modelo": "XGBoost (ajustado)",
+    "archivo": "tab_A4.joblib",
+    "f1_val": 0.7716
+  }
+}

@@ -1,0 +1,10 @@
+URL,tipo,P(phishing) · CNN URL original,P(phishing) · CNN · dominio
+https://www.google.com/maps,Legítima,1.0,0.527
+https://es.wikipedia.org/wiki/Phishing,Legítima,1.0,0.592
+https://github.com/54isaac09,Legítima,1.0,0.32
+https://www.ubiobio.cl/w/,Legítima,1.0,0.604
+https://mail.google.com/mail/u/0/,Legítima,1.0,0.998
+http://secure-login-verify-account.xyz/signin,Phishing (inventada),1.0,1.0
+https://paypal-account-update.web.app/login,Phishing (inventada),1.0,1.0
+http://192.168.10.5/bank/login.php,Phishing (inventada),1.0,1.0
+https://bancoestado-cl-verificacion.top/clave,Phishing (inventada),1.0,1.0
