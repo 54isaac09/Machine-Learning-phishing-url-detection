@@ -12,7 +12,7 @@ Este proyecto compara modelos de Machine Learning (sobre variables tabulares) y 
 
 El CSV no se sube al repositorio (54 MB). La primera vez que se ejecuta el código, se descarga automáticamente desde UCI con `ucimlrepo` y se guarda en `data/`.
 
-⚠️ En el dataset original `label = 1` es legítima y `label = 0` es phishing. El código crea la columna `es_phishing` (1 = phishing) y se trabaja siempre con ella.
+**Importante:** en el dataset original `label = 1` es legítima y `label = 0` es phishing. El código crea la columna `es_phishing` (1 = phishing) y se trabaja siempre con ella.
 
 ## Cómo reproducir
 
