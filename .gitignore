@@ -1,0 +1,13 @@
+# Dataset original (54 MB): se descarga automáticamente desde UCI
+data/PhiUSIIL_Phishing_URL_Dataset.csv
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
